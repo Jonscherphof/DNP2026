@@ -3,88 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategische Visie: Director Asset Performance</title>
+    <title>Strategische Visie: Jon Scherphof</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc; /* Slate 50 */
         }
         .pillar-card {
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0; /* slate-200 */
         }
         .pillar-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        .pillar-card.active {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            border-color: #0d9488; /* Teal 600 */
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
         .prose-area {
-            background-color: #f5f5f4; /* Stone 100 */
+            background-color: #f8fafc; /* Slate 50 */
             border-left: 4px solid #0d9488; /* Teal 600 */
             padding: 1.5rem;
             border-radius: 0 8px 8px 0;
         }
         .proven-experience {
-            background-color: #e0f2f1; /* Teal 50 */
-            border: 1px solid #5eead4; /* Teal 300 */
-            padding: 1rem;
+            background-color: #f0fdfa; /* Teal 50 */
+            border: 1px solid #99f6e4; /* Teal 200 */
+            padding: 1.5rem;
             border-radius: 8px;
             margin-top: 1.5rem;
         }
+        .details-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .details-content.show {
+            max-height: 1500px; /* Large enough to fit content */
+            opacity: 1;
+        }
+        .read-more-btn {
+            background-color: #f1f5f9;
+            color: #0d9488;
+            transition: all 0.2s ease;
+        }
+        .read-more-btn:hover {
+            background-color: #e2e8f0;
+            color: #0f766e;
+        }
     </style>
 </head>
-<body class="text-slate-800">
+<body class="text-slate-800 antialiased">
 
-    <div class="container mx-auto p-4 md:p-8">
-        <header class="text-center mb-10 md:mb-16">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-900">Strategische Visie</h1>
-            <p class="text-xl text-slate-600 mt-3">Mijn Aanpak als Toekomstig Director Asset Performance</p>
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+        <header class="text-center mb-12 md:mb-20">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight">Strategische Visie</h1>
+            <p class="text-lg md:text-xl text-slate-600 mt-4 max-w-3xl mx-auto">Mijn aanpak om als Director Asset Performance de energietransitie te leiden en te versnellen.</p>
         </header>
 
         <main>
             <!-- Overall Vision Section -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg mb-12">
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">Mijn Visie: Van Netbeheer naar Netregie</h2>
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Mijn Visie: Van Assetbeheer naar Systeemregie</h2>
                 <div class="prose-area">
                     <p class="text-slate-700 text-lg">
-                        De energietransitie vraagt van Enexis een fundamentele rolverandering: van een traditionele netbeheerder naar een proactieve regisseur van het energiesysteem. Als Director Asset Performance is het mijn missie om deze transitie te leiden door onze assets niet alleen te beheren, maar strategisch in te zetten.
+                        De energietransitie vereist een fundamentele rolverandering: van een reactieve netbeheerder naar een proactieve regisseur van het energiesysteem. Mijn missie is om Enexis in deze rol te positioneren door onze assets niet alleen te beheren, maar strategisch in te zetten als de motor van de transitie.
                     </p>
                     <p class="text-slate-700 text-lg mt-4">
-                        Deze visie is geen theoretisch concept; het is een strategie diep geworteld in de praktijk. Mijn diepgaande kennis van de operationele realiteit, opgedaan in het hart van onze vestigingen, zorgt voor een plan dat uitvoerbaar en gedragen is. Het is ontwikkeld in lijn met onze kernwaarden en in samenspraak met de COO. We borgen de <strong>onwrikbare betrouwbaarheid</strong> van vandaag, en bouwen tegelijkertijd aan de <strong>flexibele, data-gedreven netten</strong> van morgen.
+                        Deze visie is geen abstractie. Het is een strategie gevormd in de praktijk, geworteld in een diepgaand begrip van de operatie en in lijn met de koers van de COO. We borgen de <strong>onwrikbare betrouwbaarheid</strong> van vandaag, en bouwen met daadkracht aan de <strong>flexibele, intelligente netten</strong> van morgen.
                     </p>
                 </div>
             </div>
 
             <!-- Strategic Pillars Section -->
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-slate-800">Mijn Strategische Pijlers</h2>
-                <p class="text-lg text-slate-600 mt-2">Selecteer een pijler voor een gedetailleerde toelichting van mijn aanpak.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Mijn Drie Strategische Pijlers</h2>
+                <p class="text-lg text-slate-600 mt-3">Een integrale aanpak voor meetbaar resultaat.</p>
             </div>
-            <div id="pillars-container" class="grid md:grid-cols-3 gap-8 mb-12">
+            <div id="pillars-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <!-- Pillar cards will be injected here by JavaScript -->
-            </div>
-
-            <!-- Details Section -->
-            <div id="details-section" class="hidden">
-                 <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg mb-8">
-                    <h3 id="details-title" class="text-2xl font-bold text-slate-800 mb-6"></h3>
-                    <div id="details-content" class="text-slate-700 space-y-4"></div>
-                </div>
             </div>
             
             <!-- Leadership Philosophy Section -->
-            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg mt-12">
-                <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Mijn Leiderschapsfilosofie: De Brug Slaan</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mt-12 md:mt-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-8 text-center">Mijn Leiderschapsfilosofie: De Brug Slaan</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="prose-area">
                         <h3 class="font-semibold text-lg text-slate-800">Visie & Richting</h3>
-                        <p class="text-slate-700">Ik vertaal complexe uitdagingen naar een heldere, gedragen strategie en zorg ervoor dat iedereen begrijpt hoe zijn of haar bijdrage het grotere geheel dient.</p>
+                        <p class="text-slate-700">Ik vertaal complexe uitdagingen naar een heldere, gedragen strategie en zorg ervoor dat iedereen zijn cruciale bijdrage aan het grotere geheel ziet en voelt.</p>
                     </div>
                     <div class="prose-area">
                         <h3 class="font-semibold text-lg text-slate-800">Empowerment & Vertrouwen</h3>
@@ -92,7 +98,7 @@
                     </div>
                     <div class="prose-area">
                         <h3 class="font-semibold text-lg text-slate-800">Strategie met Compassie</h3>
-                        <p class="text-slate-700">Mijn leiderschap slaat de brug tussen de bestuurskamer en de werkvloer. Omdat ik de dagelijkse uitdagingen en expertise van onze technici van binnenuit ken, zorg ik voor een realistische en gedragen strategie.</p>
+                        <p class="text-slate-700">Mijn leiderschap slaat de brug tussen de bestuurskamer en de werkvloer. Omdat ik de dagelijkse uitdagingen van onze technici van binnenuit ken, zorg ik voor een realistische en gedragen strategie.</p>
                     </div>
                     <div class="prose-area">
                         <h3 class="font-semibold text-lg text-slate-800">Transparantie & Resultaat</h3>
@@ -110,22 +116,22 @@
                     id: 1,
                     title: "Data-Gedreven Excellentie",
                     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4M4 7l8 4.5 8-4.5M12 12v9" /></svg>`,
-                    summary: "Transformeren van data naar inzicht en van inzicht naar geoptimaliseerde investeringen en proactief onderhoud.",
+                    summary: "Data is de sleutel tot een intelligent net. Ik transformeer onze data naar voorspellende analyses voor maximale betrouwbaarheid en geoptimaliseerde investeringen.",
                     details: `
                         <div class="prose-area">
-                            <h4>Mijn Aanpak:</h4>
-                            <p>De praktijk heeft mij geleerd dat de ware rijkdom aan data bij onze monteurs en in onze operationele systemen ligt. Dit is de sleutel tot de volgende stap in professionalisering. We evolueren van reactief onderhoud naar voorspellende analyses om storingen te voorkomen en de levensduur van assets te maximaliseren. Mijn aanpak omvat:</p>
+                            <h4>Mijn Aanpak: Van Optimalisatie naar Valorisatie</h4>
+                            <p>Enexis zet al goede stappen in het gebruik van data. Mijn meerwaarde ligt in de volgende, cruciale stap: het behandelen van data als een strategisch bedrijfsmiddel. We gaan verder dan interne optimalisatie en creëren nieuwe waarde.</p>
                             <ul>
-                                <li class="ml-4 list-disc"><strong>Implementatie van een Digital Twin:</strong> We bouwen een virtuele replica van ons netwerk, gevoed met real-time data. Dit stelt ons in staat om scenario's te simuleren, de impact van investeringen te voorspellen en onderhoud uiterst efficiënt te plannen.</li>
-                                <li class="ml-4 list-disc"><strong>Advanced Analytics & AI:</strong> We zetten AI-modellen in voor 'asset health scoring' en het identificeren van zwakke plekken in het net voordat ze een probleem worden. Dit leidt tot een hogere betrouwbaarheid tegen lagere maatschappelijke kosten.</li>
+                                <li class="ml-4 list-disc"><strong>Data-as-a-Strategic-Asset (DASA):</strong> Ik initieer een programma om onze unieke, anonieme data te valoriseren. Denk aan betaalde API-diensten voor gemeenten die data nodig hebben voor ruimtelijke ordening, of voor projectontwikkelaars om de optimale locatie voor laadpleinen te bepalen.</li>
+                                <li class="ml-4 list-disc"><strong>Implementatie van een Digital Twin:</strong> We bouwen een virtuele replica van ons netwerk, gevoed met real-time data. Dit stelt ons in staat om scenario's te simuleren en onderhoud uiterst efficiënt te plannen.</li>
                                 <li class="ml-4 list-disc"><strong>Optimalisatie van Investeringsportfolio:</strong> Door data te gebruiken, zorgen we ervoor dat elke geïnvesteerde euro de maximale impact heeft. We maken scherpe, onderbouwde keuzes, gedragen door de inzichten uit de operatie.</li>
                             </ul>
                             <h4>Doelstellingen:</h4>
-                            <p>Binnen 2 jaar hebben we de ongeplande uitval met 15% gereduceerd en zijn onze investeringsbeslissingen volledig gebaseerd op een data-gedreven risico- en kansenanalyse.</p>
+                            <p>Binnen 3 jaar hebben we de eerste externe omzetstroom uit onze DASA-propositie gerealiseerd en zijn onze investeringsbeslissingen volledig gebaseerd op een data-gedreven risico- en kansenanalyse.</p>
                         </div>
                         <div class="proven-experience">
                             <h5 class="font-bold text-slate-800">Mijn Bewezen Aanpak:</h5>
-                            <p class="text-slate-700 text-sm">Als <strong>Manager Meters & Metercommunicatie</strong> heb ik de transitie naar een data-gedreven organisatie geleid. Ik heb teams van professionals aangestuurd die de ruggengraat van onze data-infrastructuur vormen. Mijn ervaring bij <strong>Green Orange</strong> met het ontwikkelen van digitale innovaties voor o.a. Siemens en het winnen van de Erasmus Health Innovation Challenge door slimme data-inzet, bewijst mijn vermogen om data om te zetten in concrete, waardevolle oplossingen. Deze ervaring neem ik mee om Asset Performance naar een hoger niveau te tillen.</p>
+                            <p class="text-slate-700 text-sm">Als <strong>Manager Meters & Metercommunicatie</strong> heb ik de transitie naar een data-gedreven organisatie geleid. Ik heb teams van professionals aangestuurd die de ruggengraat van onze data-infrastructuur vormen. Mijn ervaring bij <strong>Green Orange</strong> met het winnen van de Erasmus Health Innovation Challenge door slimme data-inzet, bewijst mijn vermogen om data om te zetten in concrete, waardevolle en zelfs levensreddende oplossingen. Deze ervaring neem ik mee om Enexis' data te valoriseren.</p>
                         </div>
                     `
                 },
@@ -133,22 +139,22 @@
                     id: 2,
                     title: "Toekomstbestendige Netten",
                     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
-                    summary: "Proactief investeren in netcapaciteit en flexibiliteit om de energietransitie te faciliteren en netcongestie voor te zijn.",
+                    summary: "Ik stap af van reactief uitbreiden en introduceer programmatische netontwikkeling: proactief investeren in capaciteit en flexibiliteit om congestie voor te zijn.",
                     details: `
                         <div class="prose-area">
-                            <h4>Mijn Aanpak:</h4>
-                            <p>De signalen uit de consumentenmarkt en de industrie zijn duidelijk: wachten is geen optie. We moeten anticiperen op de groeiende vraag naar elektriciteit en de toename van decentrale opwek. Mijn strategie is gericht op proactieve actie:</p>
+                            <h4>Mijn Aanpak: Van Voorspellen naar Voorschrijven</h4>
+                            <p>Proactief plannen is goed, maar niet genoeg. Waar ik het verschil maak, is de stap van voorspellen naar voorschrijven. We gebruiken onze data niet alleen om te zien waar een probleem komt, maar om de beste oplossing te genereren.</p>
                             <ul>
-                                <li class="ml-4 list-disc"><strong>Voorspellende Netplanning:</strong> We gebruiken geavanceerde modellen om te voorspellen waar en wanneer netverzwaring nodig is, verrijkt met de lokale kennis van onze operationele teams over opkomende projecten en ontwikkelingen.</li>
+                                <li class="ml-4 list-disc"><strong>Prescriptive Analytics voor Netplanning:</strong> Ik implementeer AI-gedreven modellen die niet alleen congestie voorspellen, maar direct meerdere oplossingscenario's genereren (bv. verzwaren vs. batterijopslag vs. buurtcontract). Deze worden automatisch geëvalueerd op kosten, snelheid en maatschappelijke impact.</li>
                                 <li class="ml-4 list-disc"><strong>Inzetten op Flexibiliteit:</strong> Naast het 'leggen van koper', investeren we in slimme oplossingen zoals batterijopslag, 'congestion management' en het stimuleren van 'demand-side response' om de bestaande netten beter te benutten.</li>
                                 <li class="ml-4 list-disc"><strong>Programmatische Aanpak van Verzwaring:</strong> We clusteren projecten en werken gebiedsgericht om de doorlooptijden van netverzwaringen drastisch te verkorten, in nauwe samenwerking met de uitvoering.</li>
                             </ul>
                             <h4>Doelstellingen:</h4>
-                            <p>De gemiddelde doorlooptijd voor een standaard netverzwaring is met 25% verkort binnen 3 jaar. We hebben ten minste twee grootschalige flexibiliteits-hubs operationeel om pieken in vraag en aanbod op te vangen.</p>
+                            <p>De gemiddelde doorlooptijd voor een standaard netverzwaring is met 25% verkort binnen 3 jaar. Onze investeringskeuzes worden ondersteund door een prescriptief model dat minimaal drie scenario's per case aanlevert.</p>
                         </div>
                         <div class="proven-experience">
                             <h5 class="font-bold text-slate-800">Mijn Bewezen Aanpak:</h5>
-                            <p class="text-slate-700 text-sm">In mijn rol als <strong>Manager Specialisten en Meterkastwerkzaamheden</strong> was ik direct verantwoordelijk voor de uitbreiding en het onderhoud van ons netwerk. Ik heb complexe samenwerkingen vormgegeven en de bovenregionale samenwerking opgestart, waardoor we nu als operationele keten klaarstaan. Deze ervaring, gecombineerd met mijn tijd als <strong>Manager Field Force bij KPN</strong> waar ik grote teams van monteurs aanstuurde, geeft mij een uniek inzicht in wat er nodig is om strategische netwerkplannen succesvol op de grond te krijgen. Ik weet wat er speelt in de meterkast en hoe we de uitvoering kunnen versnellen.</p>
+                            <p class="text-slate-700 text-sm">In mijn rol als <strong>Manager Specialisten en Meterkastwerkzaamheden</strong> was ik direct verantwoordelijk voor de uitbreiding en het onderhoud van ons netwerk. Ik heb complexe samenwerkingen vormgegeven en de bovenregionale samenwerking opgestart. Deze ervaring, gecombineerd met mijn tijd als <strong>Manager Field Force bij KPN</strong>, geeft mij een uniek inzicht in wat er nodig is om strategische netwerkplannen succesvol op de grond te krijgen. Ik weet wat er speelt in de meterkast en hoe we de uitvoering kunnen versnellen en slimmer kunnen maken.</p>
                         </div>
                     `
                 },
@@ -156,18 +162,18 @@
                     id: 3,
                     title: "Strategische Samenwerking & Regie",
                     icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>`,
-                    summary: "De rol van Enexis als centrale, proactieve partner in het regionale energiesysteem om de transitie gezamenlijk te versnellen.",
+                    summary: "De energietransitie is een teamprestatie. Ik positioneer Enexis als de onmisbare spil in het regionale ecosysteem om de transitie gezamenlijk te versnellen.",
                     details: `
                         <div class="prose-area">
-                            <h4>Mijn Aanpak:</h4>
-                            <p>De energietransitie is een te grote opgave om alleen op te lossen. Als Director Asset Performance zie ik het als mijn taak om de regie te nemen in de samenwerking met alle relevante partijen. Mijn aanpak:</p>
+                            <h4>Mijn Aanpak: Van Partner naar Onmisbare Spil</h4>
+                            <p>Een goede partner zijn is de basis. Mijn ambitie is om Enexis te positioneren als de onmisbare spil waar het regionale energiesysteem om draait. Dit doen we door onze regierol te claimen met concrete, waardevolle tools.</p>
                             <ul>
-                                <li class="ml-4 list-disc"><strong>Proactief Stakeholdermanagement:</strong> Ik bouw duurzame relaties op met gemeenten, provincies en marktpartijen. We gaan van een reactieve (aanvraag-gestuurde) naar een proactieve (gezamenlijk plannende) modus, waarbij Enexis aan tafel zit vóór de plannen gemaakt worden.</li>
-                                <li class="ml-4 list-disc"><strong>Data Delen voor Inzicht:</strong> We ontwikkelen platforms om geanonimiseerde data over netbelasting en capaciteit te delen. Dit stelt de markt in staat om betere beslissingen te nemen en helpt ons om de netten efficiënter te plannen.</li>
+                                <li class="ml-4 list-disc"><strong>Lancering 'Regionaal Energie Dashboard':</strong> Ik initieer de ontwikkeling van een interactief, API-first platform. Hier kunnen stakeholders (gemeenten, provincies, marktpartijen) niet alleen data inzien, maar zelf scenario's modelleren. Dit maakt ons de 'single source of truth' en de logische regisseur.</li>
+                                <li class="ml-4 list-disc"><strong>Proactief Stakeholdermanagement:</strong> Ik bouw duurzame relaties op. We gaan van een reactieve (aanvraag-gestuurde) naar een proactieve (gezamenlijk plannende) modus, waarbij Enexis aan tafel zit vóór de plannen gemaakt worden.</li>
                                 <li class="ml-4 list-disc"><strong>Faciliteren van Sector-koppeling:</strong> Ik zie het als onze rol om de integratie van elektriciteit, warmte en mobiliteit te faciliteren. Onze asset-strategie houdt rekening met de opkomst van waterstofhubs, warmtenetten en grootschalige laadpleinen.</li>
                             </ul>
                             <h4>Doelstellingen:</h4>
-                            <p>Voor alle grote gemeenten in ons verzorgingsgebied is er een gezamenlijke, integrale energie-infrastructuurplanning. We hebben een open dataplatform gelanceerd dat actief wordt gebruikt door ten minste 50 externe partijen.</p>
+                            <p>Binnen 3 jaar is het Regionaal Energie Dashboard de standaard voor integrale energieplanning in onze top 10 gemeenten en hebben we onze rol als regisseur hiermee onomstotelijk verankerd.</p>
                         </div>
                         <div class="proven-experience">
                             <h5 class="font-bold text-slate-800">Mijn Bewezen Aanpak:</h5>
@@ -178,60 +184,60 @@
             ]
         };
 
-        let activePillarId = null;
-
-        const detailsSection = document.getElementById('details-section');
-        
-        function updateDetails(pillarId) {
-            if (activePillarId === pillarId) {
-                activePillarId = null;
-                detailsSection.classList.add('hidden');
-                updateActivePillarCard();
-                return;
-            }
-
-            activePillarId = pillarId;
-            const pillar = strategyData.pillars.find(p => p.id === pillarId);
-            if (!pillar) return;
-            
-            document.getElementById('details-title').textContent = pillar.title;
-            document.getElementById('details-content').innerHTML = pillar.details;
-            
-            detailsSection.classList.remove('hidden');
-            
-            setTimeout(() => {
-                detailsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-
-            updateActivePillarCard();
-        }
-        
-        function updateActivePillarCard() {
-            document.querySelectorAll('.pillar-card').forEach(card => {
-                card.classList.toggle('active', parseInt(card.dataset.pillarId) === activePillarId);
-            });
-        }
-
         function createPillarCards() {
             const container = document.getElementById('pillars-container');
             container.innerHTML = '';
             strategyData.pillars.forEach(pillar => {
                 const card = document.createElement('div');
-                card.className = 'pillar-card bg-white p-6 rounded-2xl shadow-lg border-2 border-transparent';
-                card.dataset.pillarId = pillar.id;
+                card.className = 'pillar-card bg-white p-6 rounded-2xl shadow-lg flex flex-col';
                 card.innerHTML = `
-                    ${pillar.icon}
-                    <h3 class="text-xl font-bold text-slate-800 mt-4 mb-2">${pillar.title}</h3>
-                    <p class="text-slate-600 mb-4">${pillar.summary}</p>
-                    <button class="text-teal-600 font-semibold hover:text-teal-700">Lees mijn aanpak →</button>
+                    <div class="flex-grow">
+                        ${pillar.icon}
+                        <h3 class="text-xl font-bold text-slate-800 mt-5 mb-3">${pillar.title}</h3>
+                        <p class="text-slate-600">${pillar.summary}</p>
+                    </div>
+                    <div class="mt-6">
+                        <button class="read-more-btn w-full px-4 py-2 text-sm font-semibold rounded-lg" data-id="${pillar.id}">
+                            Lees meer over mijn visie & ervaring
+                        </button>
+                    </div>
+                    <div id="details-${pillar.id}" class="details-content mt-6">
+                        ${pillar.details}
+                    </div>
                 `;
-                card.addEventListener('click', () => updateDetails(pillar.id));
                 container.appendChild(card);
+            });
+        }
+
+        function setupEventListeners() {
+            const container = document.getElementById('pillars-container');
+            container.addEventListener('click', function(e) {
+                if (e.target && e.target.classList.contains('read-more-btn')) {
+                    const pillarId = e.target.dataset.id;
+                    const detailsDiv = document.getElementById(`details-${pillarId}`);
+                    const button = e.target;
+                    
+                    if (detailsDiv.classList.contains('show')) {
+                        detailsDiv.classList.remove('show');
+                        button.textContent = 'Lees meer over mijn visie & ervaring';
+                    } else {
+                        // Close any other open details
+                        document.querySelectorAll('.details-content.show').forEach(openDiv => {
+                            openDiv.classList.remove('show');
+                            const openPillarId = openDiv.id.split('-')[1];
+                            document.querySelector(`button[data-id='${openPillarId}']`).textContent = 'Lees meer over mijn visie & ervaring';
+                        });
+
+                        detailsDiv.classList.add('show');
+                        button.textContent = 'Sluiten';
+                    }
+                }
             });
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             createPillarCards();
+            setupEventListeners();
         });
     </script>
 </body>
