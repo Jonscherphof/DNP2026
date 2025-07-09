@@ -77,7 +77,7 @@
 <body class="antialiased">
 
     <header class="header-section">
-        <div class="container mx-auto text-center py-16 md:py-24 px-4">
+        <div class="container mx-auto text-center pt-16 pb-20 md:py-24 px-4">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">Jon Scherphof</h1>
             <p class="text-lg md:text-xl text-slate-200 mt-4 max-w-3xl mx-auto">Mijn integrale aanpak voor de rol van Directeur, waarin ik de brug sla tussen strategie, operatie en de mens.</p>
         </div>
@@ -95,14 +95,14 @@
                     Mijn visie is om Asset Performance te <strong>transformeren</strong> van een beheerorganisatie naar de <strong>strategische motor</strong> achter de <strong>regierol</strong> van Enexis in het energiesysteem.
                 </p>
                 <p class="text-base sm:text-lg text-slate-700 mt-4">
-                    Dit is geen theoretische exercitie. Het is een strategie gevormd door jarenlange ervaring binnen de operationele en tactische lagen van Enexis en daarbuiten. Een aanpak die is geworteld in de praktijk, in lijn met onze <strong>kernwaarden</strong>, en die direct antwoord geeft op de uitdagingen waar we als bedrijf voor staan.
+                    Dit is geen theoretische exercitie. Het is een strategie gevormd door jarenlange ervaring, in lijn met onze <strong>kernwaarden</strong>. Maar bovenal is het een persoonlijke missie. Als vader van Myla (8) ben ik intrinsiek gemotiveerd om een duurzame en betrouwbare energiewereld te bouwen. Het is de toekomst die we voor haar generatie achterlaten.
                 </p>
             </div>
         </div>
 
         <!-- Strategic Pillars Section -->
         <div class="text-center mb-12 max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-enexis-dark-gray">Mijn Vier Strategische Pijlers</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-enexis-dark-gray">Waarbij ik kan helpen</h2>
             <p class="text-lg text-slate-600 mt-3">Een integrale aanpak voor de uitdagingen van vandaag en morgen.</p>
         </div>
         <div id="pillars-container" class="space-y-12 max-w-5xl mx-auto">
@@ -234,11 +234,11 @@
                 card.className = 'pillar-section bg-white p-6 md:p-8 rounded-2xl shadow-lg';
                 const iconWithColor = pillar.icon.replace('<svg ', `<svg style="color: ${pillar.color}" `);
                 card.innerHTML = `
-                    <div class="grid md:grid-cols-12 gap-8 items-center">
-                        <div class="md:col-span-3 text-center">
+                    <div class="flex flex-col md:flex-row md:gap-8 items-center text-center md:text-left">
+                        <div class="flex-shrink-0 mb-6 md:mb-0">
                             ${iconWithColor}
                         </div>
-                        <div class="md:col-span-9">
+                        <div class="flex-grow">
                             <h3 class="text-2xl font-bold text-enexis-dark-gray">${pillar.title}</h3>
                             <p class="text-slate-600 mt-2">${pillar.summary}</p>
                             <div class="mt-6">
@@ -305,3 +305,4 @@
     </script>
 </body>
 </html>
+
