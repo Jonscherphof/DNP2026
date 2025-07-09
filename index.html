@@ -14,6 +14,9 @@
             --enexis-light-gray: #f5f5f5;
             --enexis-border-gray: #e0e0e0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Aptos', 'Segoe UI', 'Calibri', 'Inter', sans-serif;
             background-color: var(--enexis-light-gray); /* Light gray background for the body */
@@ -260,6 +263,7 @@
                     const pillarId = e.target.dataset.id;
                     const detailsDiv = document.getElementById(`details-${pillarId}`);
                     const button = e.target;
+                    const card = button.closest('.pillar-card');
                     
                     const isAlreadyOpen = detailsDiv.classList.contains('show');
 
@@ -282,6 +286,14 @@
                         detailsDiv.classList.add('show');
                         button.textContent = 'Sluiten';
                         button.classList.add('toggled');
+                        
+                        // After a short delay, scroll the card into view.
+                        setTimeout(() => {
+                            card.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }, 150);
                     }
                 }
             });
