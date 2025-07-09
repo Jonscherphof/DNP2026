@@ -41,6 +41,7 @@
             border-left: 4px solid var(--enexis-green);
             padding: 1.5rem;
             border-radius: 0 4px 4px 0;
+            text-align: left; /* Ensure prose text is left-aligned */
         }
         .proven-experience {
             background-color: white;
@@ -48,6 +49,7 @@
             padding: 1.5rem;
             border-radius: 8px;
             margin-top: 1.5rem;
+            text-align: left; /* Ensure experience text is left-aligned */
         }
         .details-content {
             max-height: 0;
@@ -88,7 +90,7 @@
 
     <main class="container mx-auto p-4 sm:p-6 md:p-8 -mt-16">
         <!-- Overall Vision Section -->
-        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-12 md:mb-16">
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-12 md:mb-16 max-w-3xl mx-auto">
             <h2 class="text-2xl md:text-3xl font-bold text-enexis-dark-gray mb-4">Mijn Visie: Van Assetbeheer naar Systeemregie</h2>
             <div class="prose-area">
                 <p class="text-slate-700 text-lg">
@@ -101,12 +103,12 @@
         </div>
 
         <!-- Strategic Pillars Section -->
-        <div class="text-center mb-12">
+        <div class="text-center mb-12 max-w-3xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-enexis-dark-gray">Mijn Vier Strategische Pijlers</h2>
             <p class="text-lg text-slate-600 mt-3">Een integrale aanpak voor de uitdagingen van vandaag en morgen.</p>
         </div>
         <div class="flex justify-center">
-             <div id="pillars-container" class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12 w-full max-w-6xl">
+             <div id="pillars-container" class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12 w-full max-w-5xl">
                 <!-- Pillar cards will be injected here by JavaScript -->
             </div>
         </div>
@@ -148,8 +150,8 @@
                             <h4>Mijn Aanpak: Van Voorspellen naar Voorschrijven</h4>
                             <p>Proactief plannen is goed, maar niet genoeg. Waar ik het verschil maak, is de stap van voorspellen naar voorschrijven. We gebruiken onze data niet alleen om te zien waar een probleem komt, maar om de beste oplossing te genereren.</p>
                             <div class="space-y-2 mt-4">
-                                <div class="flex items-start"><span class="text-enexis-magenta font-bold mr-3 mt-1">&#8226;</span><span><strong>Prescriptive Analytics voor Netplanning:</strong> Ik implementeer AI-gedreven modellen die niet alleen congestie voorspellen, maar direct meerdere oplossingscenario's genereren (bv. verzwaren vs. batterijopslag vs. buurtcontract). Deze worden automatisch geëvalueerd op kosten, snelheid en maatschappelijke impact.</span></div>
-                                <div class="flex items-start"><span class="text-enexis-magenta font-bold mr-3 mt-1">&#8226;</span><span><strong>Programmatische Aanpak van Verzwaring:</strong> We clusteren projecten en werken gebiedsgericht om de doorlooptijden van netverzwaringen drastisch te verkorten, in nauwe samenwerking met de uitvoering.</span></div>
+                                <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Prescriptive Analytics voor Netplanning:</strong> Ik implementeer AI-gedreven modellen die niet alleen congestie voorspellen, maar direct meerdere oplossingscenario's genereren (bv. verzwaren vs. batterijopslag vs. buurtcontract). Deze worden automatisch geëvalueerd op kosten, snelheid en maatschappelijke impact.</span></div>
+                                <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Programmatische Aanpak van Verzwaring:</strong> We clusteren projecten en werken gebiedsgericht om de doorlooptijden van netverzwaringen drastisch te verkorten, in nauwe samenwerking met de uitvoering.</span></div>
                             </div>
                         </div>
                         <div class="proven-experience">
@@ -186,7 +188,7 @@
                         </div>
                         <div class="proven-experience">
                             <h5 class="font-bold text-enexis-dark-gray">Mijn Bewezen Aanpak:</h5>
-                            <p class="text-slate-700 text-sm">Mijn ervaring met het vormgeven van complexe samenwerkingen binnen Enexis en het sturen van maatschappelijke vraagstukken heeft me geleerd hoe essentieel een regierol is. Als <strong>Marketingmanager bij KPN</strong> was ik verantwoordelijk voor de lokale strategieën van drie merken, wat mijn vaardigheid in het managen van complexe ecosystemen heeft aangescherpt. Mijn ondernemerschap met <strong>Matrix-Noble Recruitment</strong> en mijn financiële achtergrond bij <strong>Aegon</strong> geven mij een commercieel en financieel perspectief dat cruciaal is om Enexis als een daadkrachtige, strategische partner te positioneren.</p>
+                            <p class="text-slate-700 text-sm">Mijn ervaring met het vormgeven van complexe samenwerkingen binnen Enexis en het sturen van maatschappelijke vraagstukken heeft me geleerd hoe essentieel een regierol is. Als <strong>Marketingmanager bij KPN</strong> was ik verantwoordelijk voor de lokale strategieën van drie merken (KPN, Telfort en XS4ALL), wat mijn vaardigheid in het managen van complexe ecosystemen heeft aangescherpt. Mijn ondernemerschap met <strong>Matrix-Noble Recruitment</strong> en mijn financiële achtergrond bij <strong>Aegon</strong> geven mij een commercieel en financieel perspectief dat cruciaal is om Enexis als een daadkrachtige, strategische partner te positioneren.</p>
                         </div>
                     `
                 },
@@ -201,9 +203,9 @@
                             <h4>Mijn Aanpak: Investeren in ons Grootste Kapitaal</h4>
                             <p>De energietransitie is niet alleen een technologische, maar ook een menselijke en organisatorische uitdaging. Mijn leiderschap is gericht op het creëren van een omgeving waarin onze professionals kunnen excelleren en de organisatie wendbaar genoeg is om te versnellen.</p>
                             <div class="space-y-2 mt-4">
-                                <div class="flex items-start"><span class="text-enexis-magenta font-bold mr-3 mt-1">&#8226;</span><span><strong>Ontwikkeling van T-shaped Professionals:</strong> Ik stimuleer de ontwikkeling van medewerkers met diepgaande expertise (de verticale balk van de 'T') die ook effectief kunnen samenwerken over afdelingsgrenzen heen (de horizontale balk).</span></div>
-                                <div class="flex items-start"><span class="text-enexis-magenta font-bold mr-3 mt-1">&#8226;</span><span><strong>Cultuur van Eigenaarschap:</strong> Ik geef teams de autonomie en het vertrouwen om beslissingen te nemen. Dit leidt tot snellere processen, meer innovatie en een hogere betrokkenheid.</span></div>
-                                <div class="flex items-start"><span class="text-enexis-magenta font-bold mr-3 mt-1">&#8226;</span><span><strong>Verbindend Leiderschap:</strong> Ik sla de brug tussen de strategische doelen van de directie en de dagelijkse realiteit van de operatie. Ik zorg ervoor dat iedereen begrijpt hoe zijn of haar werk bijdraagt aan de missie van Enexis.</span></div>
+                                <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Ontwikkeling van T-shaped Professionals:</strong> Ik stimuleer de ontwikkeling van medewerkers met diepgaande expertise (de verticale balk van de 'T') die ook effectief kunnen samenwerken over afdelingsgrenzen heen (de horizontale balk).</span></div>
+                                <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Cultuur van Eigenaarschap:</strong> Ik geef teams de autonomie en het vertrouwen om beslissingen te nemen. Dit leidt tot snellere processen, meer innovatie en een hogere betrokkenheid.</span></div>
+                                <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Verbindend Leiderschap:</strong> Ik sla de brug tussen de strategische doelen van de directie en de dagelijkse realiteit van de operatie. Ik zorg ervoor dat iedereen begrijpt hoe zijn of haar werk bijdraagt aan de missie van Enexis.</span></div>
                             </div>
                         </div>
                         <div class="proven-experience">
