@@ -28,17 +28,10 @@
             background-color: var(--enexis-magenta);
             color: white;
         }
-        .pillar-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid var(--enexis-border-gray);
+        .pillar-section {
             background-color: white;
-            display: flex;
-            flex-direction: column;
-            border-radius: 1rem; /* More rounded corners */
-        }
-        .pillar-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            border: 1px solid var(--enexis-border-gray);
+            transition: box-shadow 0.3s ease;
         }
         .prose-area {
             background-color: var(--enexis-light-gray);
@@ -79,16 +72,13 @@
             color: var(--enexis-dark-gray) !important;
             border: 1px solid var(--enexis-border-gray);
         }
-        .text-enexis-green {
-            color: var(--enexis-green);
-        }
     </style>
 </head>
 <body class="antialiased">
 
     <header class="header-section">
         <div class="container mx-auto text-center py-16 md:py-24 px-4">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">Asset actions 2026-2028</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">Jon Scherphof</h1>
             <p class="text-lg md:text-xl text-slate-200 mt-4 max-w-3xl mx-auto">Mijn integrale aanpak voor de rol van Directeur, waarin ik de brug sla tussen strategie, operatie en de mens.</p>
         </div>
     </header>
@@ -115,15 +105,13 @@
             <h2 class="text-3xl md:text-4xl font-bold text-enexis-dark-gray">Mijn Vier Strategische Pijlers</h2>
             <p class="text-lg text-slate-600 mt-3">Een integrale aanpak voor de uitdagingen van vandaag en morgen.</p>
         </div>
-        <div class="flex justify-center">
-             <div id="pillars-container" class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12 w-full max-w-6xl">
-                <!-- Pillar cards will be injected here by JavaScript -->
-            </div>
+        <div id="pillars-container" class="space-y-12 max-w-5xl mx-auto">
+            <!-- Pillar sections will be injected here by JavaScript -->
         </div>
         
     </main>
 
-    <footer class="text-center py-10 px-4 bg-white border-t border-gray-200">
+    <footer class="text-center py-10 px-4 bg-white border-t border-gray-200 mt-12">
         <a href="https://www.linkedin.com/in/jonscherphof/details/experience/" target="_blank" rel="noopener noreferrer" class="inline-block bg-enexis-green text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:opacity-90 transition-opacity">
             Bekijk mijn volledige ervaring op LinkedIn
         </a>
@@ -136,12 +124,12 @@
                     id: 1,
                     title: "Data-Gedreven Excellentie",
                     color: "var(--enexis-green)",
-                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4M4 7l8 4.5 8-4.5M12 12v9" /></svg>`,
+                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4M4 7l8 4.5 8-4.5M12 12v9" /></svg>`,
                     summary: "De stap zetten van data-analyse naar het valoriseren van data als strategisch bedrijfsmiddel voor een optimaal investeringsportfolio en nieuwe diensten.",
                     details: `
                         <div class="text-sm sm:text-base">
                             <div class="prose-area">
-                                <h4 class="text-center"><strong>Mijn Aanpak: Van Optimalisatie naar Valorisatie</strong></h4>
+                                <h4 class="text-left font-bold text-lg mb-2">Mijn Aanpak: Van Optimalisatie naar Valorisatie</h4>
                                 <p>Enexis zet al goede stappen in het gebruik van data. Mijn meerwaarde ligt in de volgende, cruciale stap: het behandelen van data als een strategisch bedrijfsmiddel. We gaan verder dan interne optimalisatie en creëren nieuwe waarde.</p>
                                 <div class="space-y-2 mt-4">
                                     <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Data-as-a-Strategic-Asset (DASA):</strong> Ik initieer een programma om onze unieke, anonieme data te valoriseren. Denk aan betaalde API-diensten voor gemeenten die data nodig hebben voor ruimtelijke ordening, of voor projectontwikkelaars om de optimale locatie voor laadpleinen te bepalen.</span></div>
@@ -149,8 +137,8 @@
                                 </div>
                             </div>
                             <div class="proven-experience">
-                                <h5 class="font-bold text-enexis-dark-gray text-center"><strong>Mijn Bewezen Aanpak:</strong></h5>
-                                <p class="mt-2">Als <strong>Manager Meters & Metercommunicatie</strong> heb ik de transitie naar een data-gedreven organisatie geleid en de ruggengraat van onze data-infrastructuur versterkt. Mijn ervaring bij <strong>Green Orange</strong> met het winnen van de Erasmus Health Innovation Challenge door slimme data-inzet, bewijst mijn vermogen om data om te zetten in concrete, waardevolle en zelfs levensreddende oplossingen. Deze ervaring is de basis om Enexis' data daadwerkelijk te valoriseren.</p>
+                                <h5 class="font-bold text-enexis-dark-gray text-lg mb-2">Mijn Bewezen Aanpak:</h5>
+                                <p>Als <strong>Manager Meters & Metercommunicatie</strong> heb ik de transitie naar een data-gedreven organisatie geleid en de ruggengraat van onze data-infrastructuur versterkt. Mijn ervaring bij <strong>Green Orange</strong> met het winnen van de Erasmus Health Innovation Challenge door slimme data-inzet, bewijst mijn vermogen om data om te zetten in concrete, waardevolle en zelfs levensreddende oplossingen. Deze ervaring is de basis om Enexis' data daadwerkelijk te valoriseren.</p>
                             </div>
                         </div>
                     `
@@ -159,12 +147,12 @@
                     id: 2,
                     title: "Toekomstbestendige Netten",
                     color: "var(--enexis-magenta)",
-                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
+                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`,
                     summary: "Van reactief uitbreiden naar een proactieve, programmatische netontwikkeling. Investeren in capaciteit en flexibiliteit om congestie voor te zijn.",
                     details: `
                         <div class="text-sm sm:text-base">
                             <div class="prose-area">
-                                <h4 class="text-center"><strong>Mijn Aanpak: Van Voorspellen naar Voorschrijven</strong></h4>
+                                <h4 class="text-left font-bold text-lg mb-2">Mijn Aanpak: Van Voorspellen naar Voorschrijven</h4>
                                 <p>Proactief plannen is goed, maar niet genoeg. Waar ik het verschil maak, is de stap van voorspellen naar voorschrijven. We gebruiken onze data niet alleen om te zien waar een probleem komt, maar om de beste oplossing te genereren.</p>
                                 <div class="space-y-2 mt-4">
                                     <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Prescriptive Analytics voor Netplanning:</strong> Ik implementeer AI-gedreven modellen die niet alleen congestie voorspellen, maar direct meerdere oplossingscenario's genereren (bv. verzwaren vs. batterijopslag vs. buurtcontract). Deze worden automatisch geëvalueerd op kosten, snelheid en maatschappelijke impact.</span></div>
@@ -172,12 +160,12 @@
                                 </div>
                             </div>
                             <div class="proven-experience">
-                                <h5 class="font-bold text-enexis-dark-gray text-center"><strong>Mijn Bewezen Aanpak:</strong></h5>
-                                <p class="mt-2">In mijn rol als <strong>Manager ASW en Specialisten</strong> was ik direct verantwoordelijk voor de uitbreiding en het onderhoud van ons netwerk. Een cruciaal onderdeel hiervan was het direct mitigeren van alle risico's rondom asbest, waarvoor ik een gespecialiseerd team van deskundigen heb opgezet. Dit team heeft ongemerkt, maar met mega effect, alle risico's voor Enexis in control gebracht. Daarnaast heb ik complexe samenwerkingen vormgegeven en de bovenregionale samenwerking opgestart. Deze ervaring, gecombineerd met mijn tijd als <strong>Manager Field Force bij KPN</strong>, geeft mij een uniek inzicht in wat er nodig is om strategische netwerkplannen succesvol op de grond te krijgen. Ik weet wat er speelt bij medewerkers en klanten en hoe we de uitvoering kunnen versnellen en slimmer kunnen maken.</p>
+                                <h5 class="font-bold text-enexis-dark-gray text-lg mb-2">Mijn Bewezen Aanpak:</h5>
+                                <p>In mijn rol als <strong>Manager ASW en Specialisten</strong> was ik direct verantwoordelijk voor de uitbreiding en het onderhoud van ons netwerk. Een cruciaal onderdeel hiervan was het direct mitigeren van alle risico's rondom asbest, waarvoor ik een gespecialiseerd team van deskundigen heb opgezet. Dit team heeft ongemerkt, maar met mega effect, alle risico's voor Enexis in control gebracht. Daarnaast heb ik complexe samenwerkingen vormgegeven en de bovenregionale samenwerking opgestart. Deze ervaring, gecombineerd met mijn tijd als <strong>Manager Field Force bij KPN</strong>, geeft mij een uniek inzicht in wat er nodig is om strategische netwerkplannen succesvol op de grond te krijgen. Ik weet wat er speelt bij medewerkers en klanten en hoe we de uitvoering kunnen versnellen en slimmer kunnen maken.</p>
                             </div>
                             <div class="proven-experience mt-6 bg-slate-100 border-slate-300">
-                                <h5 class="font-bold text-enexis-dark-gray text-center"><strong>Strategische Risicoanalyse: Borgen van Betrouwbaarheid</strong></h5>
-                                <div class="mt-4">
+                                <h5 class="font-bold text-enexis-dark-gray text-lg mb-2">Strategische Risicoanalyse: Borgen van Betrouwbaarheid</h5>
+                                <div class="mt-2">
                                     <p class="text-slate-600 font-semibold italic">Vraag (CEO/COO): "Deze innovatieve aanpak introduceert nieuwe risico's. Hoe borgen we de robuustheid en betrouwbaarheid van het net bij het opschalen van minder beproefde technologieën?"</p>
                                     <div class="mt-3 pl-4 border-l-2" style="border-color: var(--enexis-green)">
                                         <p>
@@ -193,12 +181,12 @@
                     id: 3,
                     title: "Strategische Samenwerking & Regie",
                     color: "var(--enexis-green)",
-                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>`,
+                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>`,
                     summary: "Van een reactieve partner naar de proactieve, onmisbare spil in het regionale energiesysteem om de transitie gezamenlijk te versnellen.",
                     details: `
                         <div class="text-sm sm:text-base">
                             <div class="prose-area">
-                                <h4 class="text-center"><strong>Mijn Aanpak: Van Partner naar Onmisbare Spil</strong></h4>
+                                <h4 class="text-left font-bold text-lg mb-2">Mijn Aanpak: Van Partner naar Onmisbare Spil</h4>
                                 <p>Een goede partner zijn is de basis. Mijn ambitie is om Enexis te positioneren als de onmisbare spil waar het regionale energiesysteem om draait. Dit doen we door onze regierol te claimen met concrete, waardevolle tools.</p>
                                 <div class="space-y-2 mt-4">
                                     <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Lancering 'Regionaal Energie Dashboard':</strong> Ik initieer de ontwikkeling van een interactief, API-first platform. Hier kunnen stakeholders (gemeenten, provincies, marktpartijen) niet alleen data inzien, maar zelf scenario's modelleren. Dit maakt ons de 'single source of truth' en de logische regisseur.</span></div>
@@ -206,8 +194,8 @@
                                 </div>
                             </div>
                             <div class="proven-experience">
-                                <h5 class="font-bold text-enexis-dark-gray text-center"><strong>Mijn Bewezen Aanpak:</strong></h5>
-                                <p class="mt-2">Mijn ervaring met het vormgeven van complexe samenwerkingen binnen Enexis en het sturen van maatschappelijke vraagstukken heeft me geleerd hoe essentieel een regierol is. Als <strong>Marketingmanager bij KPN</strong> was ik verantwoordelijk voor de lokale strategieën van drie merken (KPN, Telfort en XS4ALL), wat mijn vaardigheid in het managen van complexe ecosystemen heeft aangescherpt. Mijn ondernemerschap met <strong>Matrix-Noble Recruitment</strong> en mijn financiële achtergrond bij <strong>Aegon</strong> geven mij een commercieel en financieel perspectief dat cruciaal is om Enexis als een daadkrachtige, strategische partner te positioneren.</p>
+                                <h5 class="font-bold text-enexis-dark-gray text-lg mb-2">Mijn Bewezen Aanpak:</h5>
+                                <p>Mijn ervaring met het vormgeven van complexe samenwerkingen binnen Enexis en het sturen van maatschappelijke vraagstukken heeft me geleerd hoe essentieel een regierol is. Als <strong>Marketingmanager bij KPN</strong> was ik verantwoordelijk voor de lokale strategieën van drie merken (KPN, Telfort en XS4ALL), wat mijn vaardigheid in het managen van complexe ecosystemen heeft aangescherpt. Mijn ondernemerschap met <strong>Matrix-Noble Recruitment</strong> en mijn financiële achtergrond bij <strong>Aegon</strong> geven mij een commercieel en financieel perspectief dat cruciaal is om Enexis als een daadkrachtige, strategische partner te positioneren.</p>
                             </div>
                         </div>
                     `
@@ -216,12 +204,12 @@
                     id: 4,
                     title: "Mens & Organisatie",
                     color: "var(--enexis-magenta)",
-                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-1a6 6 0 00-1.78-4.125" /></svg>`,
+                    icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-1a6 6 0 00-1.78-4.125" /></svg>`,
                     summary: "Strategie is mensenwerk. Ik investeer in de ontwikkeling van onze professionals en bouw een cultuur van eigenaarschap, innovatie en samenwerking.",
                     details: `
                         <div class="text-sm sm:text-base">
                             <div class="prose-area">
-                                <h4 class="text-center"><strong>Mijn Aanpak: Investeren in ons Grootste Kapitaal</strong></h4>
+                                <h4 class="text-left font-bold text-lg mb-2">Mijn Aanpak: Investeren in ons Grootste Kapitaal</h4>
                                 <p>De energietransitie is niet alleen een technologische, maar ook een menselijke en organisatorische uitdaging. Mijn leiderschap is gericht op het creëren van een omgeving waarin onze professionals kunnen excelleren en de organisatie wendbaar genoeg is om te versnellen.</p>
                                 <div class="space-y-2 mt-4">
                                     <div class="flex items-start"><span class="text-enexis-green font-bold mr-3 mt-1">&#8226;</span><span><strong>Cultuur van Eigenaarschap:</strong> Ik geef teams de autonomie en het vertrouwen om beslissingen te nemen. Dit leidt tot snellere processen, meer innovatie en een hogere betrokkenheid.</span></div>
@@ -229,8 +217,8 @@
                                 </div>
                             </div>
                             <div class="proven-experience">
-                                <h5 class="font-bold text-enexis-dark-gray text-center"><strong>Mijn Bewezen Aanpak:</strong></h5>
-                                <p class="mt-2">In al mijn leidinggevende rollen, van het aansturen van diverse teams bij <strong>Enexis</strong> en <strong>KPN</strong> tot het opzetten van mijn eigen bedrijf <strong>Matrix-Noble Recruitment</strong>, staat de ontwikkeling van mensen centraal. Ik heb bewezen dat ik in staat ben om grote, gepassioneerde teams te bouwen, een fundament voor de toekomst te leggen en een 'stoffig karakter' om te vormen naar een daadkrachtige, trotse organisatie. Deze ervaring is essentieel om de afdeling Asset Performance klaar te stomen voor de toekomst.</p>
+                                <h5 class="font-bold text-enexis-dark-gray text-lg mb-2">Mijn Bewezen Aanpak:</h5>
+                                <p>In al mijn leidinggevende rollen, van het aansturen van diverse teams bij <strong>Enexis</strong> en <strong>KPN</strong> tot het opzetten van mijn eigen bedrijf <strong>Matrix-Noble Recruitment</strong>, staat de ontwikkeling van mensen centraal. Ik heb bewezen dat ik in staat ben om grote, gepassioneerde teams te bouwen, een fundament voor de toekomst te leggen en een 'stoffig karakter' om te vormen naar een daadkrachtige, trotse organisatie. Deze ervaring is essentieel om de afdeling Asset Performance klaar te stomen voor de toekomst.</p>
                             </div>
                         </div>
                     `
@@ -243,19 +231,22 @@
             container.innerHTML = '';
             strategyData.pillars.forEach(pillar => {
                 const card = document.createElement('div');
-                card.className = 'pillar-card p-6 rounded-2xl shadow-md flex flex-col';
-                // Dynamically set the color for the icon
+                card.className = 'pillar-section bg-white p-6 md:p-8 rounded-2xl shadow-lg';
                 const iconWithColor = pillar.icon.replace('<svg ', `<svg style="color: ${pillar.color}" `);
                 card.innerHTML = `
-                    <div class="flex-grow text-center">
-                        ${iconWithColor}
-                        <h3 class="text-xl font-bold text-enexis-dark-gray mt-5 mb-3">${pillar.title}</h3>
-                        <p class="text-slate-600">${pillar.summary}</p>
-                    </div>
-                    <div class="mt-6">
-                        <button class="read-more-btn w-full px-4 py-2 text-sm font-semibold rounded-lg" data-id="${pillar.id}" style="background-color: ${pillar.color}">
-                            Lees meer over mijn visie & ervaring
-                        </button>
+                    <div class="grid md:grid-cols-12 gap-8 items-center">
+                        <div class="md:col-span-3 text-center">
+                            ${iconWithColor}
+                        </div>
+                        <div class="md:col-span-9">
+                            <h3 class="text-2xl font-bold text-enexis-dark-gray">${pillar.title}</h3>
+                            <p class="text-slate-600 mt-2">${pillar.summary}</p>
+                            <div class="mt-6">
+                                <button class="read-more-btn w-full sm:w-auto px-6 py-2 text-sm font-semibold" data-id="${pillar.id}" style="background-color: ${pillar.color}">
+                                    Lees meer over mijn visie & ervaring
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div id="details-${pillar.id}" class="details-content mt-6">
                         ${pillar.details}
@@ -273,11 +264,10 @@
                     const pillarId = e.target.dataset.id;
                     const detailsDiv = document.getElementById(`details-${pillarId}`);
                     const button = e.target;
-                    const card = button.closest('.pillar-card');
+                    const card = button.closest('.pillar-section');
                     
                     const isAlreadyOpen = detailsDiv.classList.contains('show');
 
-                    // Close all other open details
                     document.querySelectorAll('.details-content.show').forEach(openDiv => {
                         if (openDiv.id !== detailsDiv.id) {
                             openDiv.classList.remove('show');
@@ -297,7 +287,6 @@
                         button.textContent = 'Sluiten';
                         button.classList.add('toggled');
                         
-                        // After a short delay, scroll the card into view.
                         setTimeout(() => {
                             card.scrollIntoView({
                                 behavior: 'smooth',
